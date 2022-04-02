@@ -39,7 +39,7 @@ body {
 }
 
 .inputForm input {
-    font-weight: 800;
+    font-weight: 500;
     min-width: 350px;
     max-width: 100%;
 }
@@ -100,4 +100,58 @@ body {
 
 .mt {
     margin-top: 1rem;
+}
+
+.mx-1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.table {
+    padding: 8px;
+    min-width: 800px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgb(0 0 0 / 20%);
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+
+.table td {
+    padding: 8px;
+    height: 50px;
+}
+
+.badges {
+    border-radius: 5px;
+    padding: 6px 12px;
+    font-size: 8px;
+    letter-spacing: 1px;
+}
+
+.action-icon {
+    width: 25px;
+    height: 25px;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+.picto-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.media-table {
+    padding-top: 2rem;
+    height: 75vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.header-section {
+    margin-top: 1.5rem;
+}
+
+.header-title {
+    margin-bottom: 0.5rem;
 }

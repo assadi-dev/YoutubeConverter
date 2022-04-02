@@ -2,7 +2,7 @@ const { contextBridge, ipcRenderer } = require("electron");
 
 // can be accessed through window.app
 contextBridge.exposeInMainWorld("electron", {
-  sendVideo: (message) => ipcRenderer.invoke("converter", message),
+  sendVideo: (args) => ipcRenderer.invoke("converter", args),
 });
 
 contextBridge.exposeInMainWorld("darkMode", {

@@ -1,23 +1,19 @@
 import React from "react";
-import Input from "./components/Input";
+import Home from "./pages/Home";
 
-const Hello = () => {
-  const toMp3 = () => {
-    console.log(window.darkMode);
+const App = () => {
+  const toMp3 = async () => {
+    const res = await electron.sendVideo("test");
+    console.log(res);
   };
 
   return (
     <div className="container">
-      <div className="d-flex align-item-center justify-content-center flex-columns full-height">
-        <p className="text-center title">Entrer le liens youtube</p>
-        <Input />
-
-        <button className="btn bg-primary mt" onClick={toMp3}>
-          Convertir
-        </button>
+      <div className="d-flex align-item-center  flex-columns full-height">
+        <Home />
       </div>
     </div>
   );
 };
 
-export default Hello;
+export default App;

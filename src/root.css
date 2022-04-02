@@ -8,3 +8,21 @@
     background-color: var(--primary);
     color: #fff;
 }
+
+.badge-success {
+    background-color: #d9eee1;
+    color: var( --success);
+    text-transform: uppercase;
+    font-weight: bold
+}
+
+.badge-danger {
+    background-color: #FF6F61;
+    color: #9B2335;
+    text-transform: uppercase;
+    font-weight: bold
+}
+
+.inputActive {
+    border: 2px solid var(--primary);
+}

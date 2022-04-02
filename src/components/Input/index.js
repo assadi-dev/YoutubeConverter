@@ -7,7 +7,7 @@ const Input = ({ ...props }) => {
   }, [focus]);
 
   return (
-    <div className="inputForm">
+    <div className={`inputForm ${focus ? "inputActive" : ""}`}>
       <input
         type="text"
         {...props}
