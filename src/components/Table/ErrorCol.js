@@ -10,8 +10,8 @@ const ErrorCol = ({ colspan, message }) => {
       <td>
         <Badges message={"Fail"} className="badges badge-danger" />
       </td>
-      <td>
-        <Picto src={alertImage} />
+      <td className="d-flex justify-content-center align-item-center">
+        <Picto src={alertImage} className="picto-icon" />
       </td>
       <td colSpan={colspan}>
         <span>{message}</span>

@@ -58,10 +58,6 @@ const Home = () => {
           </thead>
           <tbody>
             {state.videos.map((video, index) => RenderRow(video, index))}
-            <SuccessCol
-              titre="Ma video"
-              link="https://mgamma.123tokyo.xyz/get.php/9/7c/vhVHyBLjRDU.mp3?cid=MmEwMTo0Zjg6YzAxMDo5ZmE2OjoxfE5BfERF&h=xIGKrKsXLNqwWGXHbnkNWQ&s=1648919256&n=Secure-React-Electron-App-in-13-Minutes"
-            />
           </tbody>
         </Table>
       </div>
