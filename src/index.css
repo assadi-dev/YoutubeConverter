@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+button,
+input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    height: 100vh;
+}
+
+.inputForm {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.inputForm input {
+    font-weight: 800;
+    min-width: 350px;
+    max-width: 100%;
+}
+
+.inputForm input::placeholder {
+    color: rgba(40, 40, 40, 0.5);
+    font-weight: 300;
+    font-style: italic;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.flex-columns {
+    flex-direction: column;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.title {
+    Font-size: 1.5rem;
+    margin-bottom: 32px;
+}
+
+.btn {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 12px 22px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn:active {
+    opacity: 0.5;
+}
+
+.mt {
+    margin-top: 1rem;
+}
