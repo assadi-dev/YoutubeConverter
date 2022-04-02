@@ -13,3 +13,9 @@ export const getAudio = async (id) => {
   const result = await axios.request(options);
   return result;
 };
+
+export const download = async (url, title) => {
+  let result = await axios.get(url, { responseType: "blob" });
+
+  console.log(result.data);
+};

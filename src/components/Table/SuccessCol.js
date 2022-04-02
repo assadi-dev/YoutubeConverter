@@ -6,6 +6,9 @@ import removeicon from "../../icons/remove.png";
 import downloadIcon from "../../icons/download.gif";
 
 const SuccessCol = ({ titre, link, id }) => {
+  const getFile = () => {
+    electron.downloadFile(link);
+  };
   return (
     <tr>
       <td>
@@ -18,7 +21,7 @@ const SuccessCol = ({ titre, link, id }) => {
       <td className="d-flex justify-content-center align-item-center">
         <a href={link} rel="noopener noreferrer" title={titre}>
           {" "}
-          <Picto src={downloadIcon} className="action-icon" />
+          <Picto type="button" src={downloadIcon} className="action-icon" />
         </a>
         <a href="#" title="Retirer">
           <Picto src={removeicon} className="action-icon" />

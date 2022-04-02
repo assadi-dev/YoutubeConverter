@@ -1,6 +1,6 @@
 const { app, BrowserWindow, ipcMain } = require("electron");
 const path = require("path");
-const { getAudio } = require("./services/index");
+const { getAudio, download } = require("./services/index");
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require("electron-squirrel-startup")) {
@@ -57,4 +57,10 @@ ipcMain.handle("converter", async (event, args) => {
   let result = await getAudio(args);
   console.log(result.data);
   return result.data;
+});
+
+ipcMain.handle("download", async () => {
+  let result = await download(args);
+  console.log(result);
+  return result;
 });
